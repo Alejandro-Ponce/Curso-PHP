@@ -5,141 +5,175 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contactos</title>
-    <link rel="icon" href="Img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/contacto.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet"> -->
   </head>
-
+  
   <body>
-    <header>
-      <img src="img/LOGO.jpg" alt="" width="60" />
-      <nav>
-        <a href="index.html">Inicio</a>
-        <a href="lanzamiento.html">Lanzamientos</a>
-        <a href="#">Contacto</a>
+
+
+    <header class="navegacion">
+      <!--Barra de navegación-->
+      <nav class="logo-nav-container">
+        <a class="logo" href="index.html"><img src="img/LOGO.png" alt="" width="60"/></a>
+        <ul class="navegacion-barra">
+          <li><a href="index.html">INICIO</a></li>
+          <li><a href="lanzamiento.html">LANZAMIENTOS</a></li>
+          <li><a href="">CONTACTO</a></li>
+        </ul>
+        <form class="buscador-nav">
+          <input type="text">
+          <!--- <input class="buscador-nav-button" type="submit" value="BUSCAR">-->
+          <button type="submit" class="buscador-nav-button"> BUSCAR</button>
+        </form>
       </nav>
     </header>
-    <main>
-      <article>
-        <h1 style="background-color: rgba(228, 228, 228, 0.897);">☎ Contactanos: 4685-8341</h1>
-        <p> - Podes dejar un mensaje con tus datos y decinos qué pensás. A la brevedad recibirás una respuesta de nuestra parte. </p>
+    
+
+    <main class="main">
+      <article class="main-article-title">
+        <div>
+          <h2> ☎ Contactanos: 4685-8341</h2>
+          <p> - Podes dejar un mensaje con tus datos y decinos qué pensás. A la brevedad recibirás una respuesta de nuestra parte..</p>
+        </div>
       </article>
 
-        <article>
-          <fieldset>
-            <legend> <b>➜ Tu Feedback </b> </legend>
-          
-            <form>
-                <label for="nombre">
+      <section class="main-section">
+
+
+        <article class="main-section-feedback">
+
+          <div class="main-section-feedback-contenido">
+             <h2>➜ Tu Feedback</h2>
+            
+              <form class="feedback-section">
+
+                <label for="nombre" class="feedback-section-right">
                   <span>Nombre</span>
                   <input
                     type="text"
                     id="nombre"
                     name="nombre"
                     autocomplete="name"
+                    class="feedback-section-campo"
                     required
                   />
                 </label>
-            
-                <label for="apellido">
+
+                <label for="apellido" class="feedback-section-left">
                   <span>Apellido</span>
                   <input
                     type="text"
                     id="apellido"
                     name="apellido"
                     autocomplete="name"
+                    class="feedback-section-campo"
                     required
                   />
                 </label>
-
-                <label for="edad">
-                <span>Indique su Edad</span>
-                <input 
-                id="edad"
-                name="edad"
-                type="number"
-                min="1" max="100"
-                required
-                >
-              </label> 
-              <div>
-                <br>
-                <label for="email">
-                  <span>Correo electronico</span>
-                  <input
-                    type="email"
-                    id="apellido"
-                    name="apellido"
-                    autocomplete="name"
-                    required
-                  />
+              
+                <label for="edad" class="feedback-section-left">
+                  <span>Indique su Edad</span>
+                  <input 
+                  id="edad"
+                  name="edad"
+                  type="number"
+                  min="1" max="100"
+                  class="feedback-section-campo"
+                  required
+                  >
                 </label>
-                <label for="email">
-                  <span>Asunto</span>
-                  <input
-                    type="text"
-                    id="apellido"
-                    name="apellido"
-                    autocomplete="name"
-                    required
-                  />
-                </label>
-              </div>
+                
 
-              <div>
-                <br>
-                <label for="prov">Indique su Provincia</label>
-                <select name="provincia" id="prov">
-                    <option value="Caba">Capital Federal</option>
-                    <option value="Buenos Aires" selected="">Bs. As.</option>
-                    <option value="Catamarca">Catamarca</option>
-                    <option value="Chaco">Chaco</option>
-                    <option value="Chubut">Chubut</option>
-                    <option value="Cordoba">Cordoba</option>
-                    <option value="Corrientes">Corrientes</option>
-                    <option value="Entre Rios">Entre Rios</option>
-                    <option value="Formosa">Formosa</option>
-                    <option value="Jujuy">Jujuy</option>
-                    <option value="La Pampa">La Pampa</option>
-                    <option value="La Rioja">La Rioja</option>
-                    <option value="Mendoza">Mendoza</option>
-                    <option value="Misiones">Misiones</option>
-                    <option value="Neuquen">Neuquen</option>
-                    <option value="Rio Negro">Rio Negro</option>
-                    <option value="Salta">Salta</option>
-                    <option value="San Juan">San Juan</option>
-                    <option value="San Luis">San Luis</option>
-                    <option value="Santa Cruz">Santa Cruz</option>
-                    <option value="Santa Fe">Santa Fe</option>
-                    <option value="Sgo. del Estero">Sgo. del Estero</option>
-                    <option value="Tierra del Fuego">Tierra del Fuego</option>
-                    <option value="Tucuman">Tucuman</option>
-                </select>
-
-            </div>
-                <p>Indique su comentario: </p>
-                <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Ingrese un Comentario"></textarea>
-
-              <div>
-                  <label for="puntaje">Indique su nivel de satisfaccion</label>
-                  <input id="puntaje" name="puntaje" type="range" step="2" min="0" max="20" required>
+                <div>
+                  <br>
+                  <label for="prov" class="feedback-section-right">
+                    <span>Provincia</span>
+                  </label>
+                  <select name="provincia" id="prov" class="feedback-section-campo">
+                      <option value="Caba">Capital Federal</option>
+                      <option value="Buenos Aires" selected="">Bs. As.</option>
+                      <option value="Catamarca">Catamarca</option>
+                      <option value="Chaco">Chaco</option>
+                      <option value="Chubut">Chubut</option>
+                      <option value="Cordoba">Cordoba</option>
+                      <option value="Corrientes">Corrientes</option>
+                      <option value="Entre Rios">Entre Rios</option>
+                      <option value="Formosa">Formosa</option>
+                      <option value="Jujuy">Jujuy</option>
+                      <option value="La Pampa">La Pampa</option>
+                      <option value="La Rioja">La Rioja</option>
+                      <option value="Mendoza">Mendoza</option>
+                      <option value="Misiones">Misiones</option>
+                      <option value="Neuquen">Neuquen</option>
+                      <option value="Rio Negro">Rio Negro</option>
+                      <option value="Salta">Salta</option>
+                      <option value="San Juan">San Juan</option>
+                      <option value="San Luis">San Luis</option>
+                      <option value="Santa Cruz">Santa Cruz</option>
+                      <option value="Santa Fe">Santa Fe</option>
+                      <option value="Sgo. del Estero">Sgo. del Estero</option>
+                      <option value="Tierra del Fuego">Tierra del Fuego</option>
+                      <option value="Tucuman">Tucuman</option>
+                  </select>
                   
+                  <label for="email" class="feedback-section-left">
+                    <span>Correo electronico</span>
+                    <input
+                      type="email"
+                      id="email"
+                      name="apellido"
+                      autocomplete="name"
+                      class="feedback-section-campo"
+                      required
+                    />
+                  </label>
+
+                  <label for="asunto" class="feedback-section-left">
+                    <span>Asunto</span>
+                    <input
+                      type="text"
+                      id="asunto"
+                      name="asunto"
+                      autocomplete="name"
+                      class="feedback-section-campo"
+                      required
+                    />
+                  </label>
+              </div>
+              
+              <div class="caja">
+              <p>Indique su comentario: </p>
+              <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Ingrese su feedback"
+              class="caja-comentarios"
+              ></textarea>
               </div>
 
-              <br>
-              <input type="submit" value="Enviar" id="enviar">
-              <input type="reset" value="Limpiar" id="reset">
+                <div class="feedback-section-botones">
+                  <input type="submit" value="Enviar" id="enviar" class="feedback-section-botones-btn">
+                  <input type="reset" value="Limpiar" id="reset" class="feedback-section-botones-btn">
+                </div>
 
-            </form>
-          </fieldset>
-        <fieldset>
-          <legend> <b>Nos encontramos en:</b></legend>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d210146.68168877432!2d-58.573383207134555!3d-34.615743688997895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1648177615620!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </fieldset>
-        <!--<h3>Dejanos tu voto</h3>-->
+              </form>
+            </div>
         </article>
+        <article class="main-section-mapa">
+            <p>Nos encontramos en:</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d210146.68168877432!2d-58.573383207134555!3d-34.615743688997895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1648177615620!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
+        </article>
+      </section>
     </main>
-    <footer>
-      <h5> Copyright &#169; 2022 - Todos los derechos reservados - Ejercicio para Codo a Codo - Diseñado por Alejandro Ponce </h5>
-      <p></p>
+
+    <footer class="footer-section">
+      <div class="footer-seccion-contenido">
+        <span> Copyright &#169; 2022 - Ejercicio para Codo a Codo - Diseñado por Alejandro Ponce </span>
+        <p></p>
+    </div>
     </footer>
   </body>
 </html>

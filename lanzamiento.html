@@ -6,96 +6,142 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lanzamientos</title>
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/lanzamiento.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet"> -->
   </head>
-
+  
   <body>
-    <header>
-      <img src="img/LOGO.jpg" alt="" width="60" />
-      <nav>
-        <a href="index.html">Inicio</a>
-        <a href="#">Lanzamientos</a>
-        <a href="contacto.html">Contacto</a>
+
+    <header class="navegacion">
+      <!--Barra de navegación-->
+      <nav class="logo-nav-container">
+        <a class="logo" href="index.html"><img src="img/LOGO.png" alt="" width="60"/></a>
+        <ul class="navegacion-barra">
+          <li><a href="index.html">INICIO</a></li>
+          <li><a href="">LANZAMIENTOS</a></li>
+          <li><a href="contacto.html">CONTACTO</a></li>
+        </ul>
+        <form class="buscador-nav">
+          <input type="text">
+          <!--- <input class="buscador-nav-button" type="submit" value="BUSCAR">-->
+          <button type="submit" class="buscador-nav-button"> BUSCAR</button>
+        </form>
       </nav>
     </header>
+    
 
-    <main>
-      <article>
-        <h1 style="background-color: rgba(228, 228, 228, 0.897);">Lanzamientos </h1>
-        <p> - Los estrenos más impactantes de la semana:</p>
-      </article>
-      <div>
-        <h3> Novedades</h3>
-      </div>
+    <main class="main">
+      <article class="main-article-title">
+        
+        <div>
+          <h1> Lanzamientos </h1>
+          <p> - Los estrenos más impactantes de la semana en Argentina.</p>
+        </div>
 
-      <article>
-        <ol>
-          <li><a href="#nov_1">Paulo Londra - PLAN A</a> </li>
-          <li><a href="#nov_2">Tiago PZK - HABLANDO DE LOVE</a> </li>
-          <li><a href="#nov_3">FMK - GATAS</a> </li>
-          <li><a href="#nov_4">Rosalía - MOTOMAMI</a> </li>
-          <li><a href="#nov_5">Cazzu - DJ TAO SESSION # 9 (FT. DJ TAO)</a> </li>
-          <li><a href="#nov_6">Luis Fonsi - LEY DE GRAVEDAD</a> </li>
-        </ol>
       </article>
 
-      <article id="nov_1">
-        <ul>
-          <li><font color="red"> <b>Paulo Londra</b> </font> - <b>PLAN A ♪</b></li>
-        </ul>
-        <a href="https://www.youtube.com/watch?v=dmW68lzaaqs" target="_blank"><img src="img/img-1.jpg" alt="play" width="250px">
-       </a>
-        <figcaption>Paulo Londra está de vuelta: estrenó “Plan A”, su primera canción en dos años</figcaption>
-      </article>
+        <section class="main-section">  
 
-      <article id="nov_2">
-        <ul>
-          <li><font color="red"> <b>Tiago PZK</b> </font> - <b>HABLANDO DE LOVE ♪</b></li>
-        </ul>
-        <a href="https://www.youtube.com/watch?v=kMvPtA8GL9I" target="_blank"><img src="img/img-2.jpg" alt="play" width="250px">
-       </a>
-        <figcaption>Tiago PZK continúa explorando nuevos sonidos y esta vez lo hizo en “Hablando De Love”, una canción solista donde se anima a jugar con el R&B en compañía de un grupo de coristas.</figcaption>
-      </article>
+          <div class="main-sub">
+            <h3>NOVEDADES </h3>
+          </div>
 
-      <article id="nov_3">
-        <ul>
-          <li><font color="red"> <b>FMK</b> </font> - <b>GATAS ♪</b></li>
-        </ul>
-        <a href="https://www.youtube.com/watch?v=TJVFBtUBUyM" target="_blank"><img src="img/img-3.jpg" alt="play" width="250px">
-       </a>
-        <figcaption>FMK se convierte en empresario en su nuevo videoclip, “Gatas”</figcaption>
-      </article>
+          <article class="section-list">
+            <ol class="section-list-ol">
+              <li><a href="#nov_1">- Paulo Londra - PLAN A</a> </li>
+              <li><a href="#nov_2">- Tiago PZK - HABLANDO DE LOVE</a> </li>
+              <li><a href="#nov_3">- FMK - GATAS</a> </li>
+              <li><a href="#nov_4">- Rosalía - MOTOMAMI</a> </li>
+              <li><a href="#nov_5">- Cazzu - DJ TAO SESSION # 9 (FT. DJ TAO)</a> </li>
+              <li><a href="#nov_6">- Luis Fonsi - LEY DE GRAVEDAD</a> </li>
+            </ol>
+          </article>
 
-      <article id="nov_4">
-        <ul>
-          <li><font color="red"> <b>Rosalía</b> </font> - <b>MOTOMAMI ♪</b></li>
-        </ul>
-        <a href="https://www.youtube.com/watch?v=OqoNLbQkX04" target="_blank"><img src="img/img-4.jpg" alt="play" width="250px">
-       </a>
-        <figcaption>Rosalía protagoniza un fenómeno musical con su nuevo álbum “Motomami</figcaption>
-      </article>
+          <div class="section-article">
 
-      <article id="nov_5">
-        <ul>
-          <li><font color="red"> <b>Cazzu</b> </font> - <b>DJ TAO SESSION # 9 (FT. DJ TAO) ♪</b></li>
-        </ul>
-        <a href="https://www.youtube.com/watch?v=0W7WL8pJUZQ" target="_blank"><img src="img/img-5.jpg" alt="play" width="250px">
-       </a>
-        <figcaption>La Jefa del Trap presentó oficialmente este jueves su single más reciente, para el que contó con DJ Tao y a quien también puede verse en el material audiovisual</figcaption>
-      </article>
+            <article id="nov_1">
+              <div class="article-item">
+                <div class="article-section-img">
+                  <a href="https://www.youtube.com/watch?v=dmW68lzaaqs" target="_blank"><img src="img/img-1.jpg" alt="play" width="250px"></a>
+                </div>
+                <div class="article-section-txt">
+                  <h5>Paulo Londra</b></h5>
+                  <h2><b>PLAN A ♪</b></h2>
+                  <p>Paulo Londra está de vuelta: estrenó “Plan A”, su primera canción en dos años</p>
+                </div>
+              </div>
+            </article>
 
-      <article id="nov_6">
-        <ul>
-          <li><font color="red"> <b>Luis Fonsi</b> </font> - <b>LEY DE GRAVEDAD ♪</b></li>
-        </ul>
-        <a href="https://www.youtube.com/watch?v=MZcMUYPdLeI" target="_blank"><img src="img/img-6.jpg" alt="play" width="250px">
-       </a>
-        <figcaption>Ley de gravedad es el décimo álbum de estudio de Luis Fonsi, una colección de 16 pistas para las que contó como coautores y productores principales con Andrés Torres y Mauricio Rengifo, con quienes ya había trabajado en Despacito (2017), entre otras canciones.</figcaption>
-      </article>
-       
+            <article id="nov_2">
+              <div class="article-item">
+                <div class="article-section-img">
+                  <a href="https://www.youtube.com/watch?v=TJVFBtUBUyM" target="_blank"><img src="img/img-3.jpg" alt="play" width="250px"></a>
+                </div>
+                <div class="article-section-txt">
+                  <h5>FMK</b></h5>
+                  <h2><b>GATAS ♪</b></h2>
+                  <p>FMK se convierte en empresario en su nuevo videoclip, “Gatas”</p>
+                </div>
+              </div>
+            </article>
+
+            <article id="nov_4">
+              <div class="article-item">
+                <div class="article-section-img">
+                  <a href="https://www.youtube.com/watch?v=OqoNLbQkX04" target="_blank"><img src="img/img-4.jpg" alt="play" width="250px"></a>
+                </div>
+                <div class="article-section-txt">
+                  <h5>Rosalía</b></h5>
+                  <h2><b>MOTOMAMI ♪</b></h2>
+                  <p>Rosalía protagoniza un fenómeno musical con su nuevo álbum “Motomami</p>
+                </div>
+              </div>
+            </article>
+
+            <article id="nov_5">
+              <div class="article-item">
+                <div class="article-section-img">
+                  <a href="https://www.youtube.com/watch?v=0W7WL8pJUZQ" target="_blank"><img src="img/img-5.jpg" alt="play" width="250px"></a>
+                </div>
+                <div class="article-section-txt">
+                  <h5>Cazzu</b></h5>
+                  <h2><b>DJ TAO SESSION # 9 (FT. DJ TAO) ♪</b></h2>
+                  <p>La Jefa del Trap presentó oficialmente este jueves su single más reciente, <br>para el que contó con DJ Tao y a quien también puede verse en el material audiovisua
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article id="nov_6">
+              <div class="article-item">
+                <div class="article-section-img">
+                  <a href="https://www.youtube.com/watch?v=MZcMUYPdLeI" target="_blank"><img src="img/img-6.jpg" alt="play" width="250px"></a>
+                </div>
+                <div class="article-section-txt">
+                  <h5>Luis Fonsi</b></h5>
+                  <h2><b>LEY DE GRAVEDAD ♪</b></h2>
+                  <p>Ley de gravedad es el décimo álbum de estudio de Luis Fonsi,<br>
+                    una colección de 16 pistas para las que contó como coautores y productores <br>
+                    principales con Andrés Torres y Mauricio Rengifo, con quienes ya había trabajado 
+                    <br>en Despacito (2017), entre otras canciones.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+          </div>  
+        </section>  
     </main>
-    <footer>
-      <h5> Copyright &#169; 2022 - Todos los derechos reservados -  Ejercicio para Codo a Codo - Diseñado por Alejandro Ponce  </h5>
-      <p></p>
+
+    <footer class="footer-section">
+      <div class="footer-seccion-contenido">
+        <span> Copyright &#169; 2022 - Ejercicio para Codo a Codo - Diseñado por Alejandro Ponce </span>
+        <p></p>
+    </div>
     </footer>
+
   </body>
 </html>
